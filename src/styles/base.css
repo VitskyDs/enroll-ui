@@ -79,7 +79,7 @@
       Falls back to a neutral zinc tone so the app renders correctly
       before the brand color is loaded.
     */
-    --brand: oklch(0.514 0.222 16.935);
+    --brand: oklch(0.556 0 0);
 
     --background: oklch(1 0 0);
     --foreground: oklch(0.145 0 0);

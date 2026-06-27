@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import './preview.css'
 
 const BRAND_COLORS: Record<string, string> = {
+  zinc:   'oklch(0.556 0 0)',
   coral:  'oklch(0.514 0.222 16.935)',
   blue:   'oklch(0.546 0.245 264.376)',
   green:  'oklch(0.528 0.135 150.069)',
@@ -37,7 +38,8 @@ const preview: Preview = {
         title: 'Brand',
         icon: 'paintbrush',
         items: [
-          { value: 'coral',  title: 'Coral (default)' },
+          { value: 'zinc',   title: 'Zinc (neutral)' },
+          { value: 'coral',  title: 'Coral' },
           { value: 'blue',   title: 'Blue' },
           { value: 'green',  title: 'Green' },
           { value: 'violet', title: 'Violet' },
@@ -59,7 +61,7 @@ const preview: Preview = {
     },
   },
   initialGlobals: {
-    brandColor: 'coral',
+    brandColor: 'zinc',
     darkMode: 'light',
   },
   decorators: [withBrandColor, withDarkMode],

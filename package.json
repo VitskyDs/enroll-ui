@@ -1,6 +1,6 @@
 {
   "name": "@vitskyds/enroll-ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Enroll design system — components, tokens, and theming for the Enroll loyalty platform",
   "type": "module",
   "exports": {
