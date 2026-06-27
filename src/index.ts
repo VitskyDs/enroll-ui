@@ -1,2 +1,6 @@
 export * from './components/ui/index'
+export * from './components/loyalty/index'
+export * from './components/layout/index'
+export * from './components/common/index'
+export * from './components/marketing/index'
 export { cn } from './lib/utils'
