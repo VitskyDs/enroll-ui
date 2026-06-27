@@ -23,7 +23,9 @@
     "build": "tsup && npm run copy:css",
     "copy:css": "mkdir -p dist/styles && cp src/styles/base.css dist/styles/base.css",
     "dev": "tsup --watch",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "peerDependencies": {
     "react": ">=18",
@@ -42,10 +44,23 @@
     "vaul": "^1.1.2"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^5.2.1",
+    "@storybook/addon-a11y": "^10.4.6",
+    "@storybook/addon-docs": "^10.4.6",
+    "@storybook/addon-mcp": "^0.6.0",
+    "@storybook/addon-vitest": "^10.4.6",
+    "@storybook/react-vite": "^10.4.6",
+    "@tailwindcss/vite": "^4.3.1",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "@vitest/browser-playwright": "^4.1.9",
+    "@vitest/coverage-v8": "^4.1.9",
+    "playwright": "^1.61.1",
+    "storybook": "^10.4.6",
+    "tailwindcss": "^4.3.1",
     "tsup": "^8.4.0",
-    "typescript": "~6.0.2"
+    "typescript": "~6.0.2",
+    "vitest": "^4.1.9"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
